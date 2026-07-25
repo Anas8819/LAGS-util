@@ -1,0 +1,36 @@
+{
+  "name": "anas-util",
+  "version": "1.0.4",
+  "description": "Shared LAGS (List/Assay/Get/Save) HTTP dispatcher and response helpers for Viewdu Azure Function apps",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "npm run tsc",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json", 
+    "watch": "tsc -p tsconfig.json -w",
+    "prepublishOnly": "npm run tsc",
+    "version-patch": "npm version patch --no-git-tag-version",
+    "version-minor": "npm version minor --no-git-tag-version",
+    "version-major": "npm version major --no-git-tag-version",
+    "test": "echo \"No tests yet...\""
+  },
+  "keywords": [
+    "viewdu"
+  ],
+  "author": "Anas <anasahmed8819@hotmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@azure/functions": "^4.0.0-alpha.7",
+    "@viewdu/util-fxa-lib": "^1.0.45"
+  },
+  "devDependencies": {
+    "@azure/functions": "^4.0.0-alpha.7",
+    "@types/node": "^22.19.3",
+    "@viewdu/util-fxa-lib": "^1.0.45",
+    "typescript": "^6.0.3"
+  }
+}

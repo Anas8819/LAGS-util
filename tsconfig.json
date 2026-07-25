@@ -1,0 +1,17 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "lib"],
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "moduleResolution": "node",
+    "target": "ES2015",
+    "module": "ES2020",
+    "strict": false,
+    "esModuleInterop": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./lib/esm"
+  }
+}
